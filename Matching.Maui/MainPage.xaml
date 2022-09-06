@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Matching.Maui.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Name="thispage"
+    BackgroundColor="#bee893">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Border">
+                <Setter Property="WidthRequest" Value="100" />
+                <Setter Property="HeightRequest" Value="140" />
+                <Setter Property="Stroke" Value="#fbfeb2" />
+                <Setter Property="StrokeThickness" Value="4" />
+                <Setter Property="StrokeShape" Value="RoundRectangle 16,16,16,16" />
+            </Style>
+
+            <Style TargetType="Image">
+                <Setter Property="Source" Value="leaf" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <VerticalStackLayout VerticalOptions="Center">
+        <Grid
+            x:Name="GameTable"
+            RowSpacing="20"
+            ColumnSpacing="20"
+            HorizontalOptions="Center"
+            ColumnDefinitions="*,*,*"
+            RowDefinitions="*,*,*">
+            <Border
+                x:Name="Card0"
+                Grid.Row="0"
+                Grid.Column="0">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Card_Tapped" />
+                </Border.GestureRecognizers>
+                <Image />
+            </Border>
+            <Border
+                x:Name="Card1"
+                Grid.Row="0"
+                Grid.Column="1">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Card_Tapped" />
+                </Border.GestureRecognizers>
+                <Image />
+            </Border>
+            <Border
+                x:Name="Card2"
+                Grid.Row="0"
+                Grid.Column="2">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Card_Tapped" />
+                </Border.GestureRecognizers>
+                <Image />
+            </Border>
+
+            <Border
+                x:Name="Card3"
+                Grid.Row="1"
+                Grid.Column="0">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Card_Tapped" />
+                </Border.GestureRecognizers>
+                <Image />
+            </Border>
+            <Border
+                x:Name="Card4"
+                Grid.Row="1"
+                Grid.Column="1">
+                <Image />
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Card_Tapped" />
+                </Border.GestureRecognizers>
+            </Border>
+            <Border
+                x:Name="Card5"
+                Grid.Row="1"
+                Grid.Column="2">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Card_Tapped" />
+                </Border.GestureRecognizers>
+                <Image />
+            </Border>
+        </Grid>
+
+        <Button
+            WidthRequest="160"
+            Margin="0,40"
+            HorizontalOptions="Center"
+            Text="Reset"
+            FontSize="20"
+            Clicked="Reset_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>
