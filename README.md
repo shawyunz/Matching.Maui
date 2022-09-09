@@ -6,11 +6,11 @@ A simple memory card (match up) game in .Net Maui.
 
 ## Features
 
-- Animation
+- Animation: flip, shake and carousel
 - Border
+- Shuffle & Match
 - Splash & Icon
 - Style
-- Shuffle cards and matching
 
 
 
@@ -23,5 +23,6 @@ A simple memory card (match up) game in .Net Maui.
 
 
 
-## Others
+## Todo
 
+- [ ] Binding with dynamic cards list.
