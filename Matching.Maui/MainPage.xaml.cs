@@ -4,9 +4,9 @@ public partial class MainPage : ContentPage
 {
     private static List<FruitCard> _cards = new List<FruitCard>
     {
-        new FruitCard("peach"),  new FruitCard("peach"),
-        new FruitCard("orange"), new FruitCard("orange"),
-        new FruitCard("pear"),   new FruitCard("pear")
+        new FruitCard("peach.jpg"),  new FruitCard("peach.jpg"),
+        new FruitCard("orange.jpg"), new FruitCard("orange.jpg"),
+        new FruitCard("pear.jpg"),   new FruitCard("pear.jpg")
     };
 
     private bool _IsWaitForCheck;
@@ -82,7 +82,7 @@ public partial class MainPage : ContentPage
         //flip both ui and data
         await border.RotateYTo(90, 250, Easing.CubicIn);
         card.IsFaceUp = isFirstFlip;
-        (border.Content as Image).Source = isFirstFlip ? card.ImageSource : "leaf";
+        (border.Content as Image).Source = isFirstFlip ? card.ImageSource : "leaf.jpg";
         await border.RotateYTo(isFirstFlip ? 180 : 0, 250, Easing.SpringOut);
     }
 

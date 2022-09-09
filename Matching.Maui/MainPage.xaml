@@ -16,7 +16,7 @@
             </Style>
 
             <Style TargetType="Image">
-                <Setter Property="Source" Value="leaf" />
+                <Setter Property="Source" Value="leaf.jpg" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
